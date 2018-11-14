@@ -103,6 +103,7 @@ void DRIVEONE()//reverse motion
   digitalWrite(IN2, LOW);  
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW); 
+  sonar();
  
   for (int x = 0; x < 256; x++)   // Motor will accelerate from 0 to maximum speed
   {
@@ -124,6 +125,7 @@ void DRIVETWO()//foward motion
   digitalWrite(IN2, HIGH);  
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, HIGH); 
+  sonar();
  
   for (int x = 0; x < 256; x++)   // Motor will accelerate from 0 to maximum speed
   {
@@ -158,7 +160,7 @@ void DRIVELEFT()
   digitalWrite(IN4, LOW); 
   digitalWrite(ledpin1,LOW);
   
-    
+    sonar();
   
  
 
@@ -186,7 +188,7 @@ void DRIVERIGHT()
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW); 
   digitalWrite(ledpin2,LOW);
-  
+  sonar();
     
   
  
